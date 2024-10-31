@@ -110,7 +110,7 @@ function SlaterDeterminantPsi(XList,NList)
 end
 
 #function to generate samples and save to npy file
-function sampleGenerator(Samples::Integer, Ne, nList, file_name = "temp_samples.npy")
+function sampleGenerator(Samples::Integer, Ne, nList; file_name = "temp_samples.npy")
     if size(nList)[1] != Ne
         error("List length is longer than number of particles!")
     end
